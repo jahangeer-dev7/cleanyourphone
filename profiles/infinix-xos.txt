@@ -1,0 +1,115 @@
+# ==============================================================================
+# cleanyourphone - Infinix / Transsion XOS Debloat Manifest
+# Target Platform: Infinix XOS (Infinix Note 30, Zero, GT, Hot, Smart series)
+# Also compatible with: Tecno HiOS, itel itelOS (Transsion sister brands)
+#
+# Safety Policy:
+# - All packages disabled via `pm disable-user --user 0` (100% reversible)
+# - No system partitions modified; zero brick risk
+# - To restore any package: `adb shell pm enable <package>`
+# - 1-Click Restore: `./tools/restore.sh`
+#
+# DO NOT ADD TO THIS LIST:
+# - com.android.phone, com.android.server.telecom (Calling/telephony)
+# - com.sh.smart.caller (Infinix default phone dialer/caller UI)
+# - com.android.incallui (In-call screen)
+# - com.android.emergency (Emergency SOS)
+# - com.android.systemui (Core status bar, lockscreen, quick settings)
+# - com.transsion.keyguardclock (Lockscreen clock display)
+# - com.android.vending, com.google.android.gms (Google Play Store & Services)
+# - com.transsion.camera (Primary hardware camera)
+# - com.fpsensor.fpSensorExtensionSvc2, com.transsion.faceid (Biometrics)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Lockscreen Magazine & Ads (Aggressive lockscreen advertising & banners)
+# ------------------------------------------------------------------------------
+com.transsion.magazineservice.xos        # Lockscreen Magazine (Pushes wallpaper ads, sponsored news, and banners)
+
+# ------------------------------------------------------------------------------
+# 2. Proprietary App Stores & Promotion Engines
+# ------------------------------------------------------------------------------
+com.transsnet.store                     # Palm Store (Aggressive OEM app store with spam ads and auto-download prompts)
+tech.palm.id                            # Palm ID Account Services (Transsion user account telemetry)
+tech.palm.find                          # Palm Find My Device (Redundant with Google Find My Device)
+net.bat.store                           # Aha Games / Bat Store (Pre-installed junk game store)
+
+# ------------------------------------------------------------------------------
+# 3. Bloat Browsers & Search Partner Hijackers
+# ------------------------------------------------------------------------------
+com.talpa.hibrowser                     # HiBrowser (Bloat OEM web browser with clickbait feed and popups)
+com.talpa.hiservice                     # Hi Language Service (Translation push ad daemon)
+com.transsion.chromecustomization       # Chrome Assistant / Partner OEM search hooks
+
+# ------------------------------------------------------------------------------
+# 4. Telemetry, Analytics, IMEI Logging & Sales Tracking
+# ------------------------------------------------------------------------------
+com.transsion.statisticalsales          # SysStasl (Transsion device sales activation and IMEI reporting agent)
+com.transsion.trancare                  # Trancare (Continuous background diagnostics and behavioral logging)
+com.transsion.uxdetector                # UX Detector (Telemetry tracker profiling app usage patterns)
+com.transsion.succ                      # TranSucc (Analytics event collector daemon)
+com.transsion.zahooc                    # ZaHooc (Background behavioral analytics service)
+com.transsion.hamal                     # TranHamal (Background metric telemetry collector)
+com.transsion.teop                      # TEOP (Transsion Experience Optimization Program background agent)
+com.transsion.nephilim                  # Nephilim (Transsion background metrics collector)
+com.transsion.tabe                      # TranAbe (Analytics daemon)
+com.transsion.tower                     # Control Tower (Transsion telemetry daemon)
+
+# ------------------------------------------------------------------------------
+# 5. Fake Cleaners, Antivirus & RAM Boosters
+# ------------------------------------------------------------------------------
+com.transsion.phonemaster               # Phone Master (Bloatware cleaner with aggressive ads, fake RAM boost popups)
+com.transsion.phonemanager              # HiManager (OEM phone manager bloatware)
+com.scorpio.securitycom                 # SecurityCom (Partner antivirus bloat)
+
+# ------------------------------------------------------------------------------
+# 6. Proprietary Cloud & Sync Services
+# ------------------------------------------------------------------------------
+com.transsion.cloudserver               # Transsion Cloud Sync background service
+com.transsion.letswitch                 # Let's Switch (OEM phone migration tool running idle listeners)
+com.transsion.plat.appupdate            # Transsion App Update Platform (Bypasses Google Play Store for OEM updates)
+
+# ------------------------------------------------------------------------------
+# 7. AI Voice & Assistant Bloat
+# ------------------------------------------------------------------------------
+com.transsion.folax                     # Folax / AIVoiceAssistant v3.5 (Heavy OEM voice assistant consuming ~100MB+ RAM)
+com.transsion.aivoiceassistant          # AISysService voice engine daemon
+com.transsion.aisettings                # AI Voice Settings service
+com.transsion.kolun.assistant           # Smart Assistant (Zero-screen card feed with sponsored news)
+com.transsion.kolun.aiservice           # Kolun AI Service (Background AI suggestions engine)
+com.transsion.aicoreservice             # AICoreService (Transsion background AI broker)
+
+# ------------------------------------------------------------------------------
+# 8. Pre-installed Bloatware, Spam Push & Junk Apps
+# ------------------------------------------------------------------------------
+com.trassion.infinix.xclub              # XClub (Infinix social forum and community spam app)
+com.transsion.carlcare                  # Carlcare (Customer service app with marketing push notifications)
+com.transsion.smartmessage              # Smart Message (Commercial marketing push notification service)
+com.facemoji.lite.transsion             # Facemoji Keyboard (Ad-supported keyboard loaded with emoji tracking)
+com.transsion.healthlife                # Welife / Health Life (Fitness tracking bloat with account requirements)
+com.transsion.magicshow                 # Magic Show (Unused lockscreen / visual effect bloat)
+com.transsion.magicfont                 # Magic Font (OEM font store with premium font upsells)
+com.transsion.repaircard                # E-Warranty Card (Pre-activated digital warranty sender)
+com.transsion.scanningrecharger         # Smart Scan (Voucher and recharge scanner bloat)
+com.transsion.childmode                 # Child Mode launcher overlay service
+com.transsion.manualguide               # User Manual / Quick Guide viewer
+com.transsion.audiosmartconnect         # AudioLink connect bloat
+com.transsion.iotservice                # Welink IoT service
+com.transsion.iotcard                   # IoT Card widget
+
+# ------------------------------------------------------------------------------
+# 9. Live Wallpapers & Heavy GPU Animation Bloat
+# ------------------------------------------------------------------------------
+com.transsion.livewallpaper.npower      # Npower Live Wallpaper (Constantly drains battery/GPU in background)
+com.transsion.livewallpaper.magictouch  # MagicTouch Live Wallpaper
+com.transsion.livewallpaper.metaengine  # Metaengine Live Wallpaper renderer
+com.transsion.livewallpaper.page        # TranLivePicker (Live wallpaper picker daemon)
+com.transsion.aiwallpaper               # AI Wallpaper generator
+
+# ------------------------------------------------------------------------------
+# 10. Third-Party Preloaded Partner Bloat
+# ------------------------------------------------------------------------------
+com.facebook.appmanager                 # Facebook App Manager (Silent background updater)
+com.facebook.services                   # Facebook Services background sync daemon
+com.facebook.system                     # Facebook System installer
+android.autoinstalls.config.transsion.device # Carrier auto-install configuration

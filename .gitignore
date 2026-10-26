@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary backups and captures
+backups/*.txt
+backups/*.png
+backups/*.json
+!backups/.gitkeep
+*.png
+.DS_Store
