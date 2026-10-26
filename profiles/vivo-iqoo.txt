@@ -1,0 +1,24 @@
+# ==============================================================================
+# cleanyourphone — Vivo & iQOO (Funtouch OS / OriginOS)
+# Safety: Uses `pm disable-user --user 0`. 100% reversible via `restore.sh`.
+# ==============================================================================
+
+# 1. V-APPSTORE & AD ENGINES
+com.vivo.appstore
+com.vivo.browser
+com.vivo.game
+com.bbk.appstore
+com.vivo.pushservice
+com.vivo.magazine
+
+# 2. JOVI ASSISTANT & TELEMETRY
+com.vivo.globalsearch
+com.vivo.hiboard
+com.vivo.easyshare
+com.bbk.cloud
+
+# 3. PARTNER PRELOADS
+com.facebook.katana
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services

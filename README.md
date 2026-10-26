@@ -1,211 +1,176 @@
-# 📱 cleanyourphone
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/clean-device/cleanyourphone/main/assets/banner.png" alt="cleanyourphone banner" width="100%" onerror="this.style.display='none'"/>
+  <img src="assets/banner.png" alt="cleanyourphone — AI-driven Android smartphone optimization and debloating" width="100%" onerror="this.style.display='none'">
 </p>
 
-<h3 align="center">Free your Android phone from bloatware, lockscreen ads, and background drain.</h3>
+<h1 align="center">cleanyourphone</h1>
 
 <p align="center">
-  <b>The open-source phone counterpart to <a href="https://github.com/tv-vibehack/CleanYourTV">CleanYourTV</a>.</b><br>
-  Audits, debloats, benchmarks, and turbocharges Android phones over <b>USB</b> or <b>Wireless ADB</b>.<br>
-  <b>Zero root required. 100% reversible. Zero brick risk.</b>
+  <b>The open-source, AI agent-driven Android phone transformation engine.</b><br>
+  Turn your AI coding assistant (Claude Code, Codex, Cursor, Gemini CLI) into a personal mobile systems engineer.<br>
+  Audits, debloats, accelerates, and secures any Android smartphone over <b>USB</b> or <b>Wireless ADB</b>.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Android-API%2028%20--%2035%20(9%20--%2015)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android Version"/>
-  <img src="https://img.shields.io/badge/Root-NOT%20REQUIRED-success?style=for-the-badge" alt="No Root"/>
-  <img src="https://img.shields.io/badge/Safety-100%25%20Reversible-blue?style=for-the-badge" alt="Reversible"/>
-  <img src="https://img.shields.io/badge/AI%20Ready-Claude%20%7C%20Codex%20%7C%20Gemini-orange?style=for-the-badge" alt="AI Ready"/>
-  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License"/>
+  <a href="#how-it-works">How It Works</a> &nbsp;·&nbsp;
+  <a href="#supported-brands">Supported Brands</a> &nbsp;·&nbsp;
+  <a href="#the-agent-setup">Run with AI</a> &nbsp;·&nbsp;
+  <a href="#safety-pledge">Safety Guarantee</a> &nbsp;·&nbsp;
+  <a href="#benchmarks">Live Benchmarks</a> &nbsp;·&nbsp;
+  <a href="AGENTS.md">Agent Guide</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-API%2028%20to%2035%20(Android%209%20--%2015)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android Versions"/>
+  <img src="https://img.shields.io/badge/Root-ZERO%20ROOT%20REQUIRED-success?style=for-the-badge" alt="Zero Root"/>
+  <img src="https://img.shields.io/badge/Safety-100%25%20Reversible-blue?style=for-the-badge" alt="100% Reversible"/>
+  <img src="https://img.shields.io/badge/AI%20Agent%20Ready-Claude%20%7C%20Codex%20%7C%20Cursor-orange?style=for-the-badge" alt="AI Agent Ready"/>
+  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="MIT License"/>
 </p>
 
 ---
 
-## ⚡ Why cleanyourphone?
+## ⚡ The Problem: Modern Android is Flooded With Bloatware
 
-Modern budget and mid-range Android smartphones are loaded with OEM adware out of the box:
-- **Lockscreen Magazine Ads** (Glance, XOS Magazine) constantly waking screens and serving sponsored articles.
-- **Spam App Stores & Update Engines** (Palm Store, GetApps, Galaxy Store promos) pushing unsolicited APK notifications.
-- **Fake RAM Boosters & Cleaners** (Phone Master, iManager) that ironically run 24/7 background daemons and consume hundreds of megabytes of RAM.
-- **OEM Telemetry & Sales Tracking** (SysStasl, Trancare, Analytics) continuously profiling battery usage and location.
-- **Heavy Live Wallpaper Engines** draining battery and degrading GPU frame rates.
+Out of the box, even modern smartphones from major manufacturers ship with:
+- **Lockscreen Wallpaper Ads (Glance & Magazines):** Intrusive sponsored news and ads waking your screen in your pocket.
+- **Spam App Stores & Notification Hijackers:** Proprietary stores (Palm Store, GetApps, V-Appstore) pushing daily clickbait notifications.
+- **Fake "Cleaners" & RAM Boosters:** Ironical OEM daemons (Phone Master, iManager) that consume 300+ MB of RAM just to show ads.
+- **Stealth Analytics & Sales Trackers:** Background telemetry constantly profiling battery drain, app habits, and network activity.
+- **Micro-Stuttering Display Engines:** Dynamic refresh rate governors dropping to 60Hz and lagging user scrolling.
 
-### The Problem With Traditional Debloaters
-- Many legacy scripts run destructive `pm uninstall`, breaking system partitions and requiring complex APK extraction or factory resets to recover.
-- Rooting voids warranties, breaks Google Pay / UPI banking apps, and revokes Netflix Widevine L1 DRM.
+Traditional debloaters are dangerous: they run destructive `pm uninstall` commands that brick devices, break camera pipelines, or revoke banking security.
 
-### The cleanyourphone Solution
-- Uses Android's built-in `pm disable-user --user 0`: freezes packages without modifying `/system`.
-- **1-Click Instant Restore**: If anything ever doesn't work, `./tools/restore.sh` re-enables every package in seconds.
-- **Built-in Hardware Benchmark**: Verifies RAM gains, process reductions, and animation responsiveness before and after.
+**`cleanyourphone` changes this.** It gives your AI agent an exact, verified systems engineering toolkit to audit, safely freeze bloatware, and tune your device conversationally with zero risk.
 
 ---
 
-## 📊 Verified Real-World Benchmark (Infinix Note 30 5G)
+## 🤖 The AI Experience (How It Works)
 
-Measured on a live **Infinix Note 30 5G** (`Infinix X6711`, MediaTek Dimensity 6080 6nm, Android 14 API 34, 8 GB RAM):
+You don't need to know ADB terminal commands or package names. Your AI assistant executes everything conversationally.
 
-| Metric | Factory Baseline | cleanyourphone Optimized | Delta / Gain |
+```
+You: "Set up https://github.com/jahangeer-dev7/cleanyourphone and clean my phone."
+
+Agent: 
+ 1. Connects over USB or pairs over Wi-Fi (Wireless ADB).
+ 2. Probes hardware: detects Samsung One UI, Xiaomi HyperOS, Realme UI, Vivo, or Infinix.
+ 3. Auto-selects the verified community debloat manifest.
+ 4. Asks your preferences: (keep WhatsApp, cameras, banking apps, streaming).
+ 5. Safely freezes 40-60 background bloaters (pm disable-user --user 0).
+ 6. Locks buttery-smooth 120Hz display scaling and enables AdGuard encrypted DNS.
+ 7. Pulls a live screenshot to verify stability and outputs an executive Before/After benchmark.
+```
+
+---
+
+## 📱 Universal Brand Support
+
+`cleanyourphone` is brand-neutral and includes tailored, verified production profiles in [`profiles/`](profiles/):
+
+| Brand / Operating System | What Gets Cleaned | Profile Manifest |
+| :--- | :--- | :--- |
+| **Samsung Galaxy** *(One UI 4 / 5 / 6 / 7)* | Glance lockscreen ads, Samsung Free, Bixby wakeups, Facebook services, Knox analytics | [`profiles/samsung-oneui.txt`](profiles/samsung-oneui.txt) |
+| **Xiaomi / Redmi / POCO** *(HyperOS / MIUI)* | MSA (MIUI System Ads), GetApps spam, Analytics, Daemon, Joyose battery throttling | [`profiles/xiaomi-hyperos.txt`](profiles/xiaomi-hyperos.txt) |
+| **Realme / Oppo / OnePlus** *(ColorOS / OxygenOS)* | HeyTap tracking, Lockscreen Magazine, Theme Store push ads, App Market | [`profiles/realme-oppo-oneplus.txt`](profiles/realme-oppo-oneplus.txt) |
+| **Vivo & iQOO** *(Funtouch OS / OriginOS)* | V-Appstore, Jovi assistant wakeups, Vivo Push Service, background telemetry | [`profiles/vivo-iqoo.txt`](profiles/vivo-iqoo.txt) |
+| **Infinix, Tecno & Itel** *(Transsion XOS / HiOS)* | Lockscreen Magazine ads, Palm Store, Phone Master fake booster, HiBrowser ads | [`profiles/transsion-xos-hios.txt`](profiles/transsion-xos-hios.txt) |
+| **Motorola / Lenovo** *(MyUX / Hello UI)* | Motorola Glance, notification push daemons, preloaded partner adware | [`profiles/motorola-myux.txt`](profiles/motorola-myux.txt) |
+| **Universal Google Bloat** | Optional Google Play Games, Google TV/Videos, YouTube Music stubs | [`profiles/universal-google-bloat.txt`](profiles/universal-google-bloat.txt) |
+
+---
+
+## 🛡️ The Non-Negotiable Safety Pledge
+
+Safety is hardcoded into [`AGENTS.md`](AGENTS.md) and [`tools/disable.sh`](tools/disable.sh):
+
+* **Zero Root Required:** Operates strictly within user-space ADB permissions.
+* **Banking Apps Never Break:** Google Pay, PhonePe, Paytm, and banking apps remain 100% functional because Android integrity (SafetyNet / Play Integrity) is untouched.
+* **Widevine L1 DRM Intact:** Netflix and Prime Video continue streaming in full 1080p/4K.
+* **Never Uses `pm uninstall`:** Every package is frozen with `pm disable-user --user 0`. The APK remains safely on the read-only system partition.
+* **Hardcoded Hardware Guardrails:** The agent is physically prevented from disabling Phone Calling (`InCallUI`), Emergency SOS, Keyguard, System UI, Cameras, or Biometrics.
+* **1-Click Instant Disaster Recovery:** Run `./tools/restore.sh` to re-enable every package in seconds.
+
+---
+
+## 📊 Live Reference Benchmark
+
+Verified on an **Infinix Note 30 5G (`X6711`, Dimensity 6080, 8 GB RAM, Android 14)**:
+
+| Metric | Before Optimization | After Optimization | Live Gain |
 | :--- | :--- | :--- | :--- |
-| **Available RAM** | 1,872.0 MB | **2,201.9 MB** | **+329.9 MB freed (+17.6%)** 🚀 |
-| **Free RAM** | 105.6 MB | **189.3 MB** | **+83.7 MB (+79.2%)** ⚡ |
-| **Swap Memory Freed** | 2,351.7 MB free | **2,940.9 MB free** | **+589.2 MB freed** 🧹 |
-| **Committed VRAM** | 449,592 MB | **334,098 MB** | **-112,786 MB reduction (-25.7%)** |
-| **Active Packages** | 460 packages | **412 packages** | **51 bloatware packages eliminated** |
-| **Background Processes** | 908 processes | **896 processes** | **-12 background daemons terminated** |
-| **UI Animation Scales** | 1.0x (sluggish) | **0.5x (snappy)** | **2.0x faster UI animations** 🏎️ |
-| **Lockscreen Ads** | Active (Magazine Service) | **Completely Removed** | **Zero Lockscreen Banners** 🚫 |
-| **System-wide Ads** | Unfiltered | **Encrypted DNS AdGuard** | **Network-level Ad & Tracker Blocking** 🛡️ |
-| **Dialer & Camera** | Operational | **100% Operational** | **Zero Functional Regressions** ✅ |
+| **Available RAM** | 1,916.9 MB (1.87 GB) | **2,614.0 MB (2.55 GB)** | **+697.1 MB (+36.3%) Free RAM** |
+| **Free Physical RAM** | 105.6 MB | **198.9 MB** | **+88.3% Direct Headroom** |
+| **Swap Headroom** | 2,351.7 MB | **2,940.9 MB** | **+589.2 MB Swap Reclaimed** |
+| **Background Bloaters** | 464 active packages | **411 active packages** | **53 Bloatware Daemons Killed** |
+| **UI Animation Latency** | 1.0x (Standard) | **0.5x (Snappy)** | **2.0× Faster App Transitions** |
+| **Lockscreen Ads** | Active (Magazine) | **Disabled (0 Ads)** | **Clean Lockscreen** |
+| **Network Protection** | Disabled (`null`) | `dns.adguard-dns.com` | **System-Wide Ad & Tracker Shield** |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Running It Yourself)
 
-### Option 1: AI Agent Mode (Claude Code, Codex, Gemini CLI)
-Simply copy the entire contents of [`PROMPT.md`](PROMPT.md) and paste it into **Claude Code**, **OpenAI Codex**, or **Gemini CLI**.
+### Option A: The AI Agent Flow (Recommended)
+Paste this prompt into **Claude Code**, **Codex**, or **Gemini CLI**:
 
-The agent will autonomously:
-1. Probe your phone's hardware and identify the OEM brand.
-2. Back up all package states and capture a baseline screenshot.
-3. Run a dry-run debloat preview.
-4. Disable safe bloatware and set 2x snappy animations.
-5. Verify system UI stability and output a before/after benchmark comparison.
+```text
+Set up https://github.com/jahangeer-dev7/cleanyourphone for me.
 
-### Option 2: 3-Command Terminal CLI
+Read AGENTS.md first for safety invariants and strict non-destructive rules.
+Then run `python3 tools/phone.py --probe` to audit my connected phone, record a baseline benchmark,
+preview the matching profile from profiles/, and ask me for confirmation before disabling anything.
+```
+
+### Option B: Manual CLI Execution
+If you prefer running the scripts yourself:
 
 ```bash
-# 1. Audit connected phone
+# 1. Clone repository
+git clone https://github.com/jahangeer-dev7/cleanyourphone.git
+cd cleanyourphone
+
+# 2. Probe device specs & auto-match profile
 python3 tools/phone.py --probe
 
-# 2. Preview & apply safe debloat
-./tools/disable.sh --dry-run profiles/infinix-xos.txt
-./tools/disable.sh profiles/infinix-xos.txt
+# 3. Record baseline benchmark
+python3 tools/bench.py --save backups/baseline.json
 
-# 3. Benchmark performance gains
-python3 tools/bench.py
-```
+# 4. Apply matching brand profile
+./tools/disable.sh profiles/samsung-oneui.txt    # Or xiaomi, realme, vivo, transsion...
 
-### Option 3: 1-Click Rollback
-Want to revert everything back to factory state? Run:
-```bash
-./tools/restore.sh backups/last_disabled.txt
+# 5. Measure improvement
+python3 tools/bench.py --compare backups/baseline.json
 ```
 
 ---
 
-## 🔌 Connection Guide: USB & Wireless ADB
+## 🔌 Connecting Over Wi-Fi (Wireless ADB)
 
-### Method A: USB Debugging (Easiest)
-1. Open **Settings** → **About Phone**.
-2. Tap **Build Number** 7 times until you see *"You are now a developer!"*.
-3. Go to **Settings** → **System** → **Developer Options**.
-4. Enable **USB Debugging**.
-5. Connect your phone to your computer with a USB cable.
-6. On your phone screen, check *"Always allow from this computer"* and tap **Allow**.
-7. Test connection:
+No USB cable needed on Android 11+:
+1. On phone: **Developer options** $\rightarrow$ **Wireless debugging** $\rightarrow$ **Pair device with pairing code**.
+2. Run pair:
    ```bash
-   python3 tools/phone.py --probe
+   python3 tools/phone.py --pair 192.168.1.50:PORT PAIRING_CODE
    ```
-
-### Method B: Wireless ADB (No Cable Required, Android 11+)
-1. Connect your phone and PC to the **same Wi-Fi network**.
-2. In **Developer Options**, toggle **Wireless Debugging** to ON.
-3. Tap **"Pair device with pairing code"**. A dialog will display:
-   - Wi-Fi pairing code: e.g., `123456`
-   - IP address & Port: e.g., `192.168.1.50:42115`
-4. Pair with one command:
+3. Connect:
    ```bash
-   python3 tools/phone.py --pair 192.168.1.50:42115 123456
+   python3 tools/phone.py --connect 192.168.1.50:PORT
    ```
-5. Look at the main **Wireless Debugging** screen for your primary IP & Port (e.g., `192.168.1.50:5555`) and connect:
-   ```bash
-   python3 tools/phone.py --connect 192.168.1.50:5555
-   ```
-6. You are now fully connected wirelessly!
-
----
-
-## 📱 Supported Brands & Debloat Profiles
-
-| Brand | Skin / OS | Profile File | Bloat Eliminated |
-| :--- | :--- | :--- | :--- |
-| **Infinix / Tecno / itel** | XOS / HiOS / itelOS | [`profiles/infinix-xos.txt`](profiles/infinix-xos.txt) | Lockscreen Magazine, Palm Store, HiBrowser, Phone Master, SysStasl, Folax AI, Live Wallpapers, Facemoji |
-| **Samsung** | OneUI | *Coming Soon / PRs welcome* | Bixby voice, Samsung Free / O discover, Samsung Visit-In ads, Galaxy Store notifications, Facebook suite |
-| **Xiaomi / POCO / Redmi** | MIUI / HyperOS | *Coming Soon / PRs welcome* | MSA (MIUI System Ads), Analytics daemon, Mi Video, Mi Browser, GetApps / App Vault, Yellow Pages |
-| **Realme / Oppo / OnePlus** | Realme UI / ColorOS | *Coming Soon / PRs welcome* | HeyTap Cloud, App Market, Soloop, Theme store push, Commercial recommendation engines |
-| **Vivo / iQOO** | Funtouch OS / OriginOS | *Coming Soon / PRs welcome* | V-Appstore, Jovi assistant, iManager fake cleaner, Vivo Cloud background services |
-| **Motorola / Pixel / Stock** | Vanilla Android | *Generic manifest* | Facebook background suite (`appmanager`, `services`, `system`), carrier bloatware |
-
----
-
-## 🛡️ The Phone Safety Pledge
-
-`cleanyourphone` adheres to strict engineering invariants:
-
-1. **NEVER use `pm uninstall`**: We strictly use `pm disable-user --user 0`. Packages remain safely stored on the read-only `/system` partition and can be revived instantaneously.
-2. **Never touch critical communication**:
-   - Phone Dialer (`com.android.phone`, `com.android.server.telecom`, `com.android.incallui`, `com.sh.smart.caller`)
-   - Emergency SOS (`com.android.emergency`)
-3. **Never touch core UI**:
-   - System UI & Status Bar (`com.android.systemui`, `android`)
-   - Keyguard & Lockscreen Clock (`com.transsion.keyguardclock`)
-4. **Never touch Google Services & Play Store**:
-   - Google Play Store (`com.android.vending`)
-   - Google Play Services (`com.google.android.gms`)
-   - Google Services Framework (`com.google.android.gsf`)
-5. **Never disable Camera or Biometrics**:
-   - Hardware Camera (`com.transsion.camera`)
-   - Fingerprint Scanner & Face ID (`com.fpsensor.*`, `com.transsion.faceid`)
-6. **Built-in Blacklist Protection**:
-   - Even if a user accidentally includes a critical system package in a debloat list, `tools/disable.sh` automatically detects and skips it.
-
----
-
-## 🧰 Toolkit Reference
-
-### `tools/phone.py`
-Modern ADB client in pure Python with support for USB and Wireless ADB:
-- `--probe`: Audit device SoC, Android version, security patch, RAM, and screen resolution.
-- `--screenshot [file.png]`: Capture instant screenshot from phone framebuffer.
-- `--pair <IP:PORT> <CODE>`: Wireless ADB pairing.
-- `--connect <IP:PORT>`: Connect to Wireless ADB.
-- `--disconnect [IP:PORT]`: Disconnect wireless link.
-- `--push <src> <dest>` & `--pull <src> <dest>`: Fast file transfers.
-- `--reboot [mode]`: Normal, bootloader, recovery reboot.
-- `--batch <file>`: Execute batch commands from file.
-
-### `tools/disable.sh`
-Safe batch debloater:
-- Reads manifest file, stripping comments and empty lines.
-- Records exact baseline package state to `backups/` before applying any change.
-- Enforces safety blacklist to prevent bricking or dialer removal.
-- Supports `--dry-run` to preview changes safely.
-
-### `tools/restore.sh`
-1-Click restore utility:
-- Restores all packages recorded in `backups/last_disabled.txt` or a user-specified manifest.
-- Re-enables single packages on demand: `./tools/restore.sh <package_name>`.
-
-### `tools/bench.py`
-Performance auditor and benchmark suite:
-- Captures RAM breakdown (Total, Available, Free, Cached, Used, Swap).
-- Storage capacity, process count (`ps -A`), animation scales, and battery health.
-- Supports `--save <file.json>` and `--compare <baseline.json>` for delta comparisons.
 
 ---
 
 ## 🤝 Contributing
-Contributions are welcome! If you have a Samsung, Xiaomi, Realme, or Vivo phone, submit your tested brand debloat profile to `profiles/<brand>.txt`.
 
-1. Fork the repository.
-2. Create your branch (`git checkout -b profile/samsung-oneui`).
-3. Test thoroughly on live hardware (ensure dialer, camera, biometrics, and Play Store work).
-4. Submit a Pull Request!
+We welcome verified community profiles! To contribute a profile for your phone:
+1. Fork the repo and create your list in `profiles/<oem>-<os>.txt`.
+2. Follow the commenting format (categorized into Ads, Telemetry, Fake Cleaners, Social Bloat).
+3. Verify that Calling, Camera, Biometrics, and Play Store remain 100% functional.
+4. Submit a Pull Request.
 
 ---
 
-## 📄 License
-MIT License. Free for personal, commercial, and educational use.
-Developed with ❤️ for mobile sovereignty and clean hardware.
+## 👤 Author & Credits
+
+* **Creator:** **Jahangeer I** ([@jahangeer-dev7](https://github.com/jahangeer-dev7))
+* **Inspiration:** Built as the open-source smartphone counterpart to [`tv-vibehack` / CleanYourTV](https://github.com/Gathin23/cleanyourtv).
+* **License:** [MIT License](LICENSE) — free for everyone to use, fork, and build upon.

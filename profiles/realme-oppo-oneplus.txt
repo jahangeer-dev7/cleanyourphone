@@ -1,0 +1,25 @@
+# ==============================================================================
+# cleanyourphone — Realme / Oppo / OnePlus (Realme UI, ColorOS, OxygenOS 12+)
+# Safety: Uses `pm disable-user --user 0`. 100% reversible via `restore.sh`.
+# ==============================================================================
+
+# 1. HEYTAP AD SERVICES & TELEMETRY
+com.heytap.habit.analysis
+com.heytap.analytics
+com.heytap.datamining
+com.heytap.openid
+com.heytap.pictorial
+com.heytap.market
+com.heytap.browser
+
+# 2. LOCKSCREEN MAGAZINE & PROMOTED APPS
+com.oppo.market
+com.coloros.gamespace
+com.nearme.atlas
+com.nearme.statistics.rom
+
+# 3. PRELOADED PARTNER ADWARE
+com.facebook.katana
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services

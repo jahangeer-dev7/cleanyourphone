@@ -1,0 +1,20 @@
+# ==============================================================================
+# cleanyourphone — Motorola / Lenovo (MyUX & Hello UI)
+# Safety: Uses `pm disable-user --user 0`. 100% reversible via `restore.sh`.
+# ==============================================================================
+
+# 1. LOCKSCREEN ADS & GLANCE ON MOTOROLA
+com.motorola.android.fido.uafclient
+com.motorola.glance
+com.glance.internet
+
+# 2. PROMOTIONAL NOTIFICATIONS & OEM PUSH
+com.motorola.ccc.notification
+com.motorola.help
+com.motorola.genie
+
+# 3. PRELOADED PARTNER ADWARE
+com.facebook.katana
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services

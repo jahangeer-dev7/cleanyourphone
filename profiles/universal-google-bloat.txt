@@ -1,0 +1,10 @@
+# ==============================================================================
+# cleanyourphone — Optional Universal Google Background Redundancies
+# Safe to disable if you use alternatives; keeps Play Store, GMS, Maps & Search
+# ==============================================================================
+com.google.android.videos
+com.google.android.play.games
+com.google.android.youtube.tvmusic
+com.google.android.feedback
+com.google.android.partnersetup
+com.google.android.syncadapters.calendar

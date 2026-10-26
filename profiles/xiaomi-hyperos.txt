@@ -1,0 +1,34 @@
+# ==============================================================================
+# cleanyourphone — Xiaomi / Redmi / POCO (HyperOS & MIUI 12 / 13 / 14)
+# Safety: Uses `pm disable-user --user 0`. 100% reversible via `restore.sh`.
+# ==============================================================================
+
+# 1. SYSTEM ADS & ANALYTICS (MSA & DAEMON)
+com.miui.msa.global
+com.miui.analytics
+com.miui.daemon
+com.xiaomi.joyose
+com.miui.hybrid
+com.miui.hybrid.accessory
+
+# 2. LOCKSCREEN WALLPAPER CAROUSEL ADS (Glance on Xiaomi)
+com.miui.android.fashiongallery
+
+# 3. PROPRIETARY APP STORE & PROMO PUSHERS
+com.xiaomi.mipicks
+com.xiaomi.payment
+com.mipay.wallet.in
+com.miui.bugreport
+com.miui.miservice
+
+# 4. SPAM BROWSER & CLOUD TELEMETRY
+com.mi.globalbrowser
+com.miui.micloudsync
+com.miui.cloudservice
+com.miui.cloudbackup
+
+# 5. PRELOADED PARTNER BLOAT
+com.facebook.katana
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services

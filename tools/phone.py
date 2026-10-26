@@ -290,7 +290,25 @@ class ADBRunner:
         dis_count_raw = self.shell("pm list packages -d | wc -l")
         dis_count = dis_count_raw.strip() if dis_count_raw.isdigit() else "0"
 
+        # Determine matching community profile
+        b_lower = (brand + " " + props.get("ro.product.manufacturer", "") + " " + model).lower()
+        if any(k in b_lower for k in ["samsung"]):
+            rec_profile = "profiles/samsung-oneui.txt"
+        elif any(k in b_lower for k in ["xiaomi", "redmi", "poco"]):
+            rec_profile = "profiles/xiaomi-hyperos.txt"
+        elif any(k in b_lower for k in ["realme", "oppo", "oneplus"]):
+            rec_profile = "profiles/realme-oppo-oneplus.txt"
+        elif any(k in b_lower for k in ["vivo", "iqoo"]):
+            rec_profile = "profiles/vivo-iqoo.txt"
+        elif any(k in b_lower for k in ["infinix", "tecno", "itel", "transsion"]):
+            rec_profile = "profiles/transsion-xos-hios.txt"
+        elif any(k in b_lower for k in ["motorola", "moto", "lenovo"]):
+            rec_profile = "profiles/motorola-myux.txt"
+        else:
+            rec_profile = "profiles/universal-google-bloat.txt"
+
         info = {
+            "recommended_profile": rec_profile,
             "serial": self.serial or "default",
             "connection": conn_type,
             "brand": brand,

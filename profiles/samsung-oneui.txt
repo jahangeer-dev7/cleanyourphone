@@ -1,0 +1,46 @@
+# ==============================================================================
+# cleanyourphone — Samsung Galaxy (One UI 4 / 5 / 6 / 7)
+# Covers: Galaxy S, A, M, F, and Z series
+# Safety: Uses `pm disable-user --user 0`. 100% reversible via `restore.sh`.
+# ==============================================================================
+
+# 1. LOCKSCREEN ADS & GLANCE
+com.glance.internet
+com.samsung.android.app.omcagent
+com.samsung.android.rubin.app
+
+# 2. SAMSUNG FREE & DAILY CONTENT FEED
+com.samsung.android.app.spage
+com.samsung.android.service.livedrawing
+com.samsung.android.livestickers
+com.samsung.android.aremoji
+com.samsung.android.aremojieditor
+
+# 3. BIXBY & VOICE WAKELOCKS
+com.samsung.android.bixby.agent
+com.samsung.android.bixby.wakeup
+com.samsung.android.bixbyvision.framework
+com.samsung.android.app.settings.bixby
+com.samsung.android.bixby.service
+
+# 4. PRELOADED PARTNER ADWARE & FACEBOOK SERVICES
+com.facebook.katana
+com.facebook.system
+com.facebook.appmanager
+com.facebook.services
+com.microsoft.skydrive
+com.microsoft.appmanager
+com.netflix.partner.activation
+
+# 5. SAMSUNG TELEMETRY, ANALYTICS & PUSH ADS
+com.sec.android.diagmonagent
+com.samsung.android.game.gamehome
+com.samsung.android.game.gametools
+com.samsung.android.game.gos
+com.samsung.android.ipsgeofence
+com.samsung.android.allshare.service.mediashare
+
+# 6. REDUNDANT OEM DUPLICATES (Google equivalents exist)
+com.sec.android.app.sbrowser
+com.samsung.android.app.watchmanagerstub
+com.samsung.android.kidsinstaller

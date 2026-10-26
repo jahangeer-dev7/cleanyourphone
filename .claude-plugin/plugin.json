@@ -1,0 +1,16 @@
+{
+  "name": "cleanyourphone",
+  "version": "1.0.0",
+  "description": "AI-driven Android smartphone optimization and debloating suite over USB & Wireless ADB. 100% reversible, zero root.",
+  "author": "Jahangeer I (jahangeer-dev7)",
+  "homepage": "https://github.com/jahangeer-dev7/cleanyourphone",
+  "repository": "https://github.com/jahangeer-dev7/cleanyourphone.git",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "cleanyourphone",
+      "path": "SKILL.md",
+      "description": "Automated Android phone technician for debloating, ad removal, and performance tuning."
+    }
+  ]
+}

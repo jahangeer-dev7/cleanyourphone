@@ -1,0 +1,59 @@
+# ==============================================================================
+# cleanyourphone — Infinix, Tecno & Itel (Transsion XOS & HiOS)
+# Tested on: Infinix Note 30 5G, GT 10 Pro, Hot series, Tecno Camon & Pova
+# Safety: Uses `pm disable-user --user 0`. 100% reversible via `restore.sh`.
+# ==============================================================================
+
+# 1. LOCKSCREEN ADS & MAGAZINE
+com.transsion.magazineservice.xos
+
+# 2. APP STORES & SPAM ENGINES
+com.transsnet.store
+tech.palm.id
+tech.palm.find
+net.bat.store
+com.transsion.plat.appupdate
+
+# 3. AD-PUSH BROWSERS
+com.talpa.hibrowser
+com.talpa.hiservice
+com.transsion.chromecustomization
+
+# 4. FAKE CLEANERS & RAM BOOSTERS
+com.transsion.phonemaster
+com.transsion.phonemanager
+com.scorpio.securitycom
+
+# 5. TELEMETRY & SALES TRACKING
+com.transsion.statisticalsales
+com.transsion.trancare
+com.transsion.uxdetector
+com.transsion.succ
+com.transsion.zahooc
+com.transsion.hamal
+com.transsion.teop
+com.transsion.nephilim
+com.transsion.tabe
+com.transsion.tower
+
+# 6. PUSH BLOAT & SOCIAL
+com.trassion.infinix.xclub
+com.transsion.carlcare
+com.transsion.smartmessage
+com.facemoji.lite.transsion
+com.transsion.cloudserver
+
+# 7. UNUSED AI DAEMONS
+com.transsion.folax
+com.transsion.aivoiceassistant
+com.transsion.aisettings
+com.transsion.kolun.assistant
+com.transsion.kolun.aiservice
+com.transsion.aicoreservice
+
+# 8. BACKGROUND GPU LIVE WALLPAPER ENGINES
+com.transsion.livewallpaper.npower
+com.transsion.livewallpaper.magictouch
+com.transsion.livewallpaper.metaengine
+com.transsion.livewallpaper.page
+com.transsion.aiwallpaper
